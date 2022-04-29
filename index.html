@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, minimum-scale=1">
+    <title>Test Personalità Film</title>
+    <link href="https://fonts.googleapis.com/css?family=Pangolin:400,700|Proxima+Nova" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="constants.js" defer="true"></script>
+    <script src="script.js" defer="true"></script>
+    <script src="script_api.js" defer="true"></script>
+    <script src="script_side.js" defer="true"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+  </head>
+
+  <body>
+    <div class="side">
+      <div id="chiudi">x</div>
+      <form>
+        <input type="text" id="t" placeholder="Cerca Film">
+        <input type="submit" value="Cerca">
+      </form>
+      <strong id="titolo"></strong>
+      <a id="anno"></a>
+      <a id="plot"></a>
+      <img id="locandina" src="">
+      <div id="yt">
+        <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button class="iscriviti">ISCRIVITI AL CANALE DEL TRAILER</button>
+        <a id="iscritto"></a>
+      </div>
+
+    </div>
+
+  <div id="wrapper" >
+    <article>
+      <header>
+        <h1>Web Programming</h1>
+        <div>
+          <span>M</span>
+          <span>H</span>
+          <span>W</span>
+          <span>3</span>
+        </div>
+      </header>
+      <div id="wrap">
+        <div id="menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <p>CERCA FILM</p>
+      </div>
+      <h1>Test Personalità Film</h1>
+
+      <section class="question-name">
+        <h1>Scegli un film d'animazione:</h1>
+      </section>
+
+      <section class="choice-grid">
+        <div data-choice-id="blep" data-question-id="one">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Frozen_Logo_Black.svg/640px-Frozen_Logo_Black.svg.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="happy" data-question-id="one">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Spirited_Away_logo.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="sleeping" data-question-id="one">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Lion-king.png/640px-Lion-king.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="dopey" data-question-id="one">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Iceage-logo.svg/640px-Iceage-logo.svg.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="burger" data-question-id="one">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Toy_Story.svg/640px-Toy_Story.svg.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="cart" data-question-id="one">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Raya_and_the_Last_Dragon_logo.png/640px-Raya_and_the_Last_Dragon_logo.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="nerd" data-question-id="one">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Shark_Tale_logo.svg/640px-Shark_Tale_logo.svg.png "/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="shy" data-question-id="one">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Finding_Nemo_logo.svg/640px-Finding_Nemo_logo.svg.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="sleepy" data-question-id="one">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Monsters%2C_Inc._logo.svg/640px-Monsters%2C_Inc._logo.svg.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+      </section>
+
+      <section class="question-name">
+        <h1>Scegli un film sci-fi:</h1>
+      </section>
+
+      <section class="choice-grid">
+        <div data-choice-id="blep" data-question-id="two">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Dune_2021_transparent_logo.png/640px-Dune_2021_transparent_logo.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="happy" data-question-id="two">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Star_wars2.svg/640px-Star_wars2.svg.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="sleeping" data-question-id="two">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Alien_%28franchise%29_logo.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="dopey" data-question-id="two">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Men_In_Black_logo.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="burger" data-question-id="two">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/2001_A_Space_Odyssey_movie_black_logo.png/640px-2001_A_Space_Odyssey_movie_black_logo.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="cart" data-question-id="two">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/The-matrix-logo.svg/640px-The-matrix-logo.svg.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="nerd" data-question-id="two">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Blade_Runner_franchise_logo_2017.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="shy" data-question-id="two">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Planet_of_the_Apes_%28logo%29.svg/640px-Planet_of_the_Apes_%28logo%29.svg.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="sleepy" data-question-id="two">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Tron_%28Disney%29%2C_Logo.svg/640px-Tron_%28Disney%29%2C_Logo.svg.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+      </section>
+
+      <section class="question-name">
+        <h1>Scegli un film vincitore dell'Oscar:</h1>
+      </section>
+
+      <section class="choice-grid">
+        <div data-choice-id="blep" data-question-id="three">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Tloftr-rotk2-logo.svg/640px-Tloftr-rotk2-logo.svg.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="happy" data-question-id="three">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Gladiator_logo.svg/640px-Gladiator_logo.svg.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="sleeping" data-question-id="three">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/The_Silence_of_the_Lambs.png/640px-The_Silence_of_the_Lambs.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="dopey" data-question-id="three">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Forrest_Gump.svg/640px-Forrest_Gump.svg.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="burger" data-question-id="three">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Braveheart.svg/640px-Braveheart.svg.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="cart" data-question-id="three">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Titanic_%281997_film%29_logo.svg/640px-Titanic_%281997_film%29_logo.svg.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="nerd" data-question-id="three">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/American_beauty.svg/640px-American_beauty.svg.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="shy" data-question-id="three">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Slumdog_Millionaire_logo.png/640px-Slumdog_Millionaire_logo.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="sleepy" data-question-id="three">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/The_king%27s_speech.svg/640px-The_king%27s_speech.svg.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+      </section>
+
+      <section id="risultato">
+        <h1></h1>
+        <p></p>
+        <button id="reset">Ricomincia il Quiz</button>
+      </section>
+    </article>
+  </div>
+</body>
+</html>

@@ -1,0 +1,277 @@
+article {
+    margin: auto;
+    width: 700px;
+}
+
+a#iscritto{
+    font-size: 40px;
+    align-self: center;
+}
+
+a#plot{
+    color: white;
+}
+
+a#anno{
+    margin-bottom: 20px;
+}
+
+#author {
+    font-size: 14px;
+}
+
+body {
+    color: #222222;
+    font-family: 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+body::before{
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow-y: hidden;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+body.a::before{
+    display: flex;
+}
+
+button {
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    background-color: #cecece;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+button.iscriviti{
+    display: none;
+}
+
+.choice-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 5px;
+    margin-bottom: 20px;
+}
+
+.choice-grid div{
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 32.5%;
+    background-color: #f4f4f4;
+    border: solid 1px #dcdcdc;
+    padding: 10px;
+}
+
+.choice-grid img{
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+
+.choice-grid img.checkbox {
+    margin-top: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+div#yt{
+    margin-bottom: 40px;
+}
+
+div.google{
+    margin-bottom: 20px;
+}
+
+div#chiudi{
+    cursor: pointer;
+    font-size: 60px;
+}
+
+div#wrapper{
+    transition: margin-left 600ms ease-in-out;
+}
+
+div#wrap{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    font-size: 42px;
+    margin: 18px 0;
+}
+
+header {
+    display: flex;
+    border-bottom: 1px solid #cccccc;
+    height: 80px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #ee3322;
+    font-family: 'Helvetica', sans-serif;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+header div,
+header h1 {
+    display: flex;
+    flex-grow: 1;
+}
+
+header div,
+header div span,
+header h1 {
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+}
+
+header div {
+    justify-content: flex-end;
+}
+
+header div span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: #ffee00;
+    height: 50px;
+    width: 50px;
+    font-weight: bold;
+    margin: 0 3px;
+    transform: rotate(-30deg);
+    z-index: -1;
+}
+
+iframe{
+    width: 100%;
+    margin-top: 20px;
+}
+
+img#locandina{
+    display: none;
+    height: auto;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=text]{
+    width: 100px;
+    border: #ee3322 solid;
+    border-radius: 15px;
+    padding: 15px 15px;
+    transition: width 400ms ease-in-out;
+}
+
+input[type=text]:focus{
+    width: 70%
+}
+
+input[type=submit]{
+    cursor: pointer;
+    border-radius: 15px;
+    width: 100px;
+    padding: 10px 10px;
+}
+
+#menu div{
+    width: 25px;
+    height: 3px;
+    background-color: #ee3322;
+    margin: 5px 10px;
+}
+
+p {
+    margin: 18px 0;
+}
+
+.question-name{
+    align-items: center;
+    background-image: url('./images/background.png');
+    display: flex;
+    height: 425px;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    background-size: cover;
+}
+
+.question-name h1 {
+    background-color: rgba(255,255,255, 0.9);
+    color: black;
+    font-family: 'Pangolin', 'Trebuchet MS', cursive;
+    font-size: 60px;
+    padding: 10px;
+    max-width: 75%;
+}
+
+section#risultato {
+    display: none;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.side{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    background-color: #222222;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0px;
+    color: #ee3322;
+    transition: width 600ms ease-in-out;
+}
+
+strong#titolo{
+    font-size: 30px;
+}
+
+@media (max-width: 700px) {
+    article{
+        width:95%;
+    }
+    header div span{
+        display: none;
+    }
+    input[type=text]:focus{
+        width: 60%
+    }
+}
+
+@media (max-width: 500px) {
+    .choice-grid div{
+        width: 49%;
+    }
+    input[type=text]:focus{
+        width: 50%
+    }
+}
